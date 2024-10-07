@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/mainActivityImageIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="32dp"
+            android:src="@drawable/baseline_person_24"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_weight="6">
+
+
+            <EditText
+                android:id="@+id/mainActivityNameEditTextET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Имя"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/mainActivityAgeEditTextET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Возраст"
+                android:textSize="16sp"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/mainActivityPhoneEditTextET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Мобильный"
+                android:textSize="16sp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/savePersonButtonBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:layout_margin="24dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/mainActivityPersonListViewLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_item" />
+
+
+
+
+</LinearLayout>
